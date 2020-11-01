@@ -56,11 +56,12 @@ input:focus::-moz-placeholder {
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #000;
+    color: #[body_text_color];
     line-height: 1.5;
+    font-size: [base_font_size]px;
 }
 h1 {
-    font-size: 30px;
+    font-size: [heading_base_size]px;
 }
 
 .titles {
@@ -105,12 +106,12 @@ div.searchlight-balloon {
 }
 .site-header {
     border-bottom: none;
-    background: #db0000;
+    background: #[header_bg];
     padding: 15px 0;
 }
 
 #checkout-logo .logo {
-    background: #db0000;
+    background: #[primary-accent];
 }
 .checkout-1 .footer-social {
     float: none;
@@ -161,55 +162,55 @@ div.searchlight-balloon {
 .btn-default,
 .btn-primary:focus, 
 .btn-primary:active:focus {
-    border-color: #db0000;
-    background-color: #fff;
-    color: #000;
+    border-color: #primary-btn-border;
+    background-color: #[primary-btn-bg];
+    color: #[primary-btn-text];
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:hover:focus,
 .btn-default.focus {
-    color: #fff;
-    background-color: #db0000;
-    border-color: #db0000;
+    color: #[primary-btn-text-hover];
+    background-color: #[primary-btn-bg-hover];
+    border-color: #[primary-btn-border-hover];
 }
 .btn-default.btn-inverse,
 .btn-primary {
-    color: #fff;
-    background-color: #db0000;
-    border-color: #db0000;
+    color: #[secondary-btn-text];
+    background-color: #[secondary-btn-bg];
+    border-color: #[secondary-btn-border];
 }
 .btn-default.btn-inverse:hover,
 .btn-primary:hover {
-    color: #fff;
-    background-color: #db0000;
-    border-color: #db0000;
+    color: #[secondary-btn-text-hover];
+    background-color: #[secondary-btn-bg-hover];
+    border-color: #[secondary-btn-border-hover];
     opacity: 0.8;
 }
 
 .navbar-wrapper {
-    background: #000;
+    background: #[navigation_bg];
     padding: 11px 0;
 }
 .navbar.navbar-inverse {
     margin-bottom: 0;
     border: none;
-    background-color: #000;
+    background-color: #[navigation_bg];
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: #fff;
+    color: #[navigation-text-color];
     font-weight: 300;
     letter-spacing: 0.025em;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: [navigation-font-size]px;
     line-height: 18px;
     min-height: auto;
     font-family: 'Mulish', sans-serif;
     padding: 10px 30px;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #000;
-    background-color: #fff;
+    color: #[navigation-text-hover-color];
+    background-color: #[navigation-bg-hover-color];
 }
 .dropdown-menu > li > a {
     font-size: 12px;
@@ -288,7 +289,7 @@ div.searchlight-balloon {
     opacity: 0.6;
 }
 .top-nav {
-    background: #fff;
+    background: #[topnav_bg];
     padding: 7px 0;
 }
 .top-nav ul#menulinks {
@@ -310,10 +311,13 @@ div.searchlight-balloon {
     padding: 0;
 }
 .top-nav ul#menulinks li a {
-    color: #000;
+    color: #[top_nav-text-color];
     font-size: 14px;
     font-weight: 600;
     line-height: 26px;
+}
+.top-nav ul#menulinks li a:hover {
+    color: #[top_nav-text-color-hover];
 }
 
 
@@ -384,7 +388,7 @@ div.searchlight-balloon {
     font-size: 25px;
     float: left;
     margin-right: 0px;
-    color: #ffa800;
+    color: #[tertiary-accent];
 }
 .minicart .cart-details {
     display: block;
@@ -406,9 +410,9 @@ span.cart-count {
     font-weight: 500;
 }
 .site-footer {
-    background-color: #000;
+    background-color: #[footer-bg];
     padding: 55px 0 20px;
-    color: #fff;
+    color: #[footer-text-color];
     font-family: 'Mulish', sans-serif;
 }
 
@@ -421,11 +425,15 @@ ul.extrapages li {
     margin: 0 0 15px;
 }
 ul.extrapages li a {
-    color: #fff;
+    color: #[footer-links-color];
     font-size: 16px;
     font-weight: 200;
     text-transform: capitalize;
 }
+ul.extrapages li a:hover {
+    color: #[footer-links-color-hover];
+}
+
 .footer-social {
     float: right;
 }
@@ -438,15 +446,15 @@ ul.extrapages li a {
     /* padding-top: 25px; */
     /* padding-bottom: 25px; */
     text-align: left;
-    color: #fff;
+    color: #[footer-text-color];
     font-size: 12px;
     font-weight: 300;
-    background: #000;
-    border-top: 1px solid #fff;
+    background: #[footer-bg];
+    border-top: 1px solid #[footer-text-color];
     padding: 8px 0;
 }
 .copyright a {
-    color: #fff;
+    color: #[footer-text-color];
     text-decoration: underline;
 }
 .copyright p {
@@ -483,7 +491,7 @@ ul.extrapages li a {
     height: 53px;
 }
 .mailinglist-submit {
-    background-color: #db0000;
+    background-color: #[primary-accent];
     color: #fff !important;
     border: none !important;
     float: right;
@@ -563,7 +571,7 @@ ul.social-icons li.social-icons-label {
 .social-icons {
 }
 .social-icons li a {
-    color: #db0000;
+    color: #[primary-accent];
     background-color: transparent;
     width: 25px;
     height: 25px;
@@ -582,20 +590,14 @@ ul.social-icons li.social-icons-label {
 }
 
 
-/*.product-item .reviews-stars:before {
-    font-family: "fontello";
-    content: "\e803 \e803 \e803 \e803 \e803";
-    color: #b8b8b8;
-}
-*/
 .product-item .reviews-stars {
-    color: gold;
+    color: #[stars-active-color];
 }
 
 .reviews-stars:before {
     font-family: "fontello";
     content: "\e803 \e803 \e803 \e803 \e803";
-    color: #b8b8b8;
+    color: #[stars-default-color];
 }
 .rating:hover .rating-star:hover,
 .rating:hover .rating-star:hover ~ .rating-star,
@@ -634,7 +636,7 @@ ul.social-icons li.social-icons-label {
     text-decoration: line-through;
 }
 .sale-price {
-    color: #d04b64;
+    color: #[sale-color];
 }
 del.original-price {
     font-weight: 500;
@@ -711,7 +713,7 @@ span.freeshipping {
     float: none;
     margin-right: auto;
     margin-bottom: 15px;
-    color: #db0000;
+    color: #[headings_color];
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
 }
@@ -750,7 +752,7 @@ span.freeshipping {
 }
 .extrapages-shower a {
     display: block;
-    background-color: #db0000;
+    background-color: #[primary-accent];
     color: #fff;
     padding: 10px 18px;
     text-decoration: none !important;
@@ -793,7 +795,7 @@ span.freeshipping {
 
 @media(max-width: 991px) {
     .mobile-search {
-        background: #db0000;
+        background: #[primary-accent];
         padding: 0 0 15px;
     }
     .search-form {

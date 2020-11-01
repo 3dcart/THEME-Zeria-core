@@ -101,19 +101,19 @@
         }
         ,
         {
-          "label": "Headings color", "name": "headings_color", "type": 2, "value": "000000", "group": 1
+          "label": "Headings color", "name": "headings_color", "type": 2, "value": "db0000", "group": 1
         }
         ,
         {
-          "label": "Primary button text color", "name": "primary-btn-text", "type": 2, "value": "ffffff", "group": 1
+          "label": "Primary button text color", "name": "primary-btn-text", "type": 2, "value": "000000", "group": 1
         }
         ,
         {
-          "label": "Primary button color", "name": "primary-btn-bg", "type": 2, "value": "000000", "group": 1
+          "label": "Primary button color", "name": "primary-btn-bg", "type": 2, "value": "ffffff", "group": 1
         }
         ,
         {
-          "label": "Primary button border", "name": "primary-btn-border", "type": 2, "value": "000000", "group": 1
+          "label": "Primary button border", "name": "primary-btn-border", "type": 2, "value": "db0000", "group": 1
         }
         ,
         {
@@ -255,7 +255,7 @@
         }
         ,
         {
-          "label": "Rating Stars color", "name": "stars-active-color", "type": 2, "value": "000000", "group": 3
+          "label": "Rating Stars color", "name": "stars-active-color", "type": 2, "value": "ffd700", "group": 3
         }
         ,
         {
@@ -536,7 +536,7 @@
         }
         ,
         {
-          "label": "Primary Accent Color", "name": "primary-accent", "type": 2, "value": "1c1570", "group": 5
+          "label": "Primary Accent Color", "name": "primary-accent", "type": 2, "value": "ffd000", "group": 5
         }
         ,
         {
@@ -544,7 +544,7 @@
         }
         ,
         {
-          "label": "Tertiary Accent Color", "name": "tertiary-accent", "type": 2, "value": "ffd000", "group": 5
+          "label": "Tertiary Accent Color", "name": "tertiary-accent", "type": 2, "value": "1c1570", "group": 5
         }
       ]
     }
