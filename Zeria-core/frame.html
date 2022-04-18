@@ -138,7 +138,17 @@
 
     <section class="mobile-search visible-sm visible-xs col-sm-12 col-xs-12">
         <div class="container">
-            <div id="search-holder"></div>
+            <div id="search-holder">
+			<div id="searchBox1" class="searchBox">
+				<form method="get" name="searchForm" action="search.asp">
+					<div class="search-form">
+						<input type="text" id="searchlight1" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
+						<button type="submit" class="search-submit btn btn-default btn-inverse"><span class="icon-search"></span></button>
+					</div>
+				</form>
+				<div class="clear"></div>
+			</div>
+			</div>
         </div>
     </section>
 

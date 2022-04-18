@@ -105,10 +105,10 @@ function moveMenu() {
     }
 
     if (respWidth < 991) {
-        jQuery('#searchBox').appendTo('#search-holder');
+        //jQuery('#searchBox').appendTo('#search-holder');
     }
     else {
-        jQuery('#searchBox').appendTo('#search-desktop');
+       // jQuery('#searchBox').appendTo('#search-desktop');
     }
 }
 
